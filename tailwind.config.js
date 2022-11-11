@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
@@ -18,6 +20,10 @@ module.exports = {
         'gray-3': '#828282',
         'gray-4': '#BDBDBD',
         'gray-5': '#E0E0E0',
+      },
+      fontFamily: {
+        sans: ['Inter', ...defaultTheme.fontFamily.sans],
+        fancy: ['"Great Vibes"', ...defaultTheme.fontFamily.sans],
       },
     },
   },

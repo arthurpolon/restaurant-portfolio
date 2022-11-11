@@ -24,7 +24,7 @@ const Header = ({ transparentOnTop = true, ...props }: IHeaderProps) => {
   const renderLinks = () =>
     Links.map((link) => (
       <Link href={link.href} key={link.href}>
-        <div className="text-2xl font-normal text-white hover:text-primary cursor-pointer transition-colors">
+        <div className="text-lg font-normal text-white hover:text-primary cursor-pointer transition-colors">
           {link.label}
         </div>
       </Link>
@@ -35,7 +35,9 @@ const Header = ({ transparentOnTop = true, ...props }: IHeaderProps) => {
   };
 
   useEffect(() => {
-    if (typeof window !== undefined && transparentOnTop) {
+    if (typeof window === 'undefined') return;
+
+    if (transparentOnTop) {
       window.addEventListener('scroll', scrollCallback);
     }
 
@@ -48,16 +50,16 @@ const Header = ({ transparentOnTop = true, ...props }: IHeaderProps) => {
     <div
       className={`${
         isTransparent ? 'bg-transparent' : 'bg-black'
-      } w-full fixed top-0 right-0 left-0 transition-colors`}
+      } w-full fixed top-0 right-0 left-0 transition-colors z-10`}
     >
       <div className="section-content py-7 px-4 box-content flex justify-between">
         <Link href="/">
-          <div className="text-gray-1 text-2xl font-bold cursor-pointer">
+          <div className="text-gray-1 text-3xl font-bold cursor-pointer">
             <span className="text-primary">Food</span>
             <span className="text-white">tuck</span>
           </div>
         </Link>
-        <div className="flex gap-8">{renderLinks()}</div>
+        <div className="flex gap-8 items-center">{renderLinks()}</div>
         <div className="flex items-center gap-4">
           <button type="button">
             <SearchIcon />
