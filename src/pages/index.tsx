@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Header from 'sections/Header';
+import Banner from 'sections/Banner/Banner';
+import Header from 'sections/Header/Header';
 
 const Home: NextPage = () => {
   return (
@@ -11,7 +12,8 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <Header transparentOnTop={false} />
+        <Header />
+        <Banner />
       </main>
     </div>
   );
