@@ -3,5 +3,6 @@
 @tailwind utilities;
 
 .section-content {
-  @apply max-w-7xl mx-auto;
+  max-width: 1320px;
+  margin: 0 auto;
 }

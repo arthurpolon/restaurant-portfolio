@@ -1,3 +1,4 @@
+import Button from 'components/Button/Button';
 import Image from 'next/image';
 import Link from 'next/link';
 import BannerImage from './images/banner-image.webp';
@@ -27,7 +28,7 @@ const Banner = () => {
     ));
 
   return (
-    <div className="flex flex-col lg:flex-row items-center xl:items-start justify-center relative gap-16 pt-24 lg:pt-48 bg-black-1">
+    <div className="flex flex-col lg:flex-row items-center xl:items-start justify-center relative gap-16 pt-24 pb-14 lg:pt-48 bg-black-1">
       <div className="flex flex-row gap-11 shrink-0">
         <div className="h-full flex flex-col gap-11 items-center">
           <div className="w-[1px] h-[158px] bg-white"></div>
@@ -49,24 +50,13 @@ const Banner = () => {
             Varius sed pharetra dictum neque massa congue
           </p>
           <Link href="/menu">
-            <div className="group px-14 py-4 bg-primary text-white rounded-full inline-block cursor-pointer hover:scale-105 hover:translate-x-2 transition-all duration-1000 relative">
-              <div className="group-hover:scale-110 group-hover:-translate-x-1 transition-all duration-700">
-                See Menu
-              </div>
-            </div>
+            <Button>See Menu</Button>
           </Link>
         </div>
       </div>
       <div className="relative w-full max-w-4xl aspect-[13/10] hidden lg:block">
-        <Image
-          src={BannerImage}
-          layout="fill"
-          objectFit="contain"
-          objectPosition="center"
-        />
+        <Image src={BannerImage} fill priority alt="Pratos de comidas" />
       </div>
-
-      {/* <Image src={BackgroundImage} layout="fill" className="inset-0 -z-10" /> */}
     </div>
   );
 };
