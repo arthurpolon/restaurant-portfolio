@@ -54,6 +54,7 @@ const Banner = () => {
           </Link>
         </div>
       </div>
+
       <div className="relative w-full max-w-4xl aspect-[13/10] hidden lg:block">
         <Image src={BannerImage} fill priority alt="Pratos de comidas" />
       </div>
