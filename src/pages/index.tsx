@@ -2,6 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import AboutUs from 'sections/AboutUs/AboutUs';
 import Banner from 'sections/Banner/Banner';
+import FoodCategory from 'sections/FoodCategory/FoodCategory';
 import Header from 'sections/Header/Header';
 
 const Home: NextPage = () => {
@@ -16,6 +17,7 @@ const Home: NextPage = () => {
         <Header />
         <Banner />
         <AboutUs />
+        <FoodCategory />
       </main>
     </div>
   );

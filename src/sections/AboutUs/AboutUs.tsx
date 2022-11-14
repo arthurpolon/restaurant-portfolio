@@ -46,9 +46,9 @@ const AboutUs = () => {
           <Image
             src={Image1Src}
             alt="prato de comida"
-            className="object-cover h-4/6 rounded-md overflow-hidden"
+            className="object-cover h-1/2 rounded-md overflow-hidden"
           />
-          <div className="flex gap-4 h-2/6">
+          <div className="flex gap-4 h-1/2">
             <div className="relative h-full basis-1/2 rounded-md overflow-hidden">
               <Image
                 src={Image2Src}
