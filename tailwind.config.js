@@ -26,6 +26,10 @@ module.exports = {
         sans: ['Inter', ...defaultTheme.fontFamily.sans],
         fancy: ['"Great Vibes"', ...defaultTheme.fontFamily.sans],
       },
+      boxShadow: {
+        light:
+          'rgba(255, 159, 13, 0.05) 0px 54px 55px, rgba(255, 159, 13, 0.05) 0px -12px 30px, rgba(255, 159, 13, 0.05) 0px 4px 6px, rgba(255, 159, 13, 0.05) 0px 12px 13px, rgba(255, 159, 13, 0.05) 0px -3px 5px',
+      },
     },
   },
   plugins: [],
