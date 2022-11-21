@@ -4,6 +4,7 @@ import AboutUs from 'sections/AboutUs/AboutUs';
 import Banner from 'sections/Banner/Banner';
 import FoodCategory from 'sections/FoodCategory/FoodCategory';
 import Header from 'sections/Header/Header';
+import Metrics from 'sections/Metrics/Metrics';
 
 const Home: NextPage = () => {
   return (
@@ -18,6 +19,7 @@ const Home: NextPage = () => {
         <Banner />
         <AboutUs />
         <FoodCategory />
+        <Metrics />
       </main>
     </div>
   );
