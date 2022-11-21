@@ -5,7 +5,7 @@ import BannerImage from './images/banner-image.webp';
 import { FacebookIcon } from './images/facebook-icon';
 import { PinterestIcon } from './images/pinterest-icon';
 import { TwitterIcon } from './images/twitter-icon';
-// import BackgroundImage from './images/background-image.webp';
+import BackgroundImageSrc from './images/background-image.webp';
 
 const SocialLinks = [
   { icon: <FacebookIcon />, href: 'https://www.facebook.com/' },
@@ -29,7 +29,7 @@ const Banner = () => {
 
   return (
     <div className="flex flex-col lg:flex-row items-center xl:items-start justify-center relative gap-16 pt-24 pb-14 lg:pt-48 bg-black-1">
-      <div className="flex flex-row gap-11 shrink-0">
+      <div className="flex pl-1 flex-row gap-11 shrink-0 z-10">
         <div className="h-full flex flex-col gap-11 items-center">
           <div className="w-[1px] h-[158px] bg-white"></div>
           <div className="flex flex-col gap-7">{renderSocialLinks()}</div>
@@ -55,9 +55,16 @@ const Banner = () => {
         </div>
       </div>
 
-      <div className="relative w-full max-w-4xl aspect-[13/10] hidden lg:block">
+      <div className="relative w-full max-w-4xl aspect-[13/10] hidden lg:block z-10">
         <Image src={BannerImage} fill priority alt="Pratos de comidas" />
       </div>
+
+      <Image
+        src={BackgroundImageSrc}
+        fill
+        alt="Pessoa pegando macarrão com pauzinhos chineses"
+        className="z-0 opacity-10 object-cover"
+      />
     </div>
   );
 };
