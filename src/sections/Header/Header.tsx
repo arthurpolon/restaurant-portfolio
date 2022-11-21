@@ -50,7 +50,7 @@ const Header = ({ transparentOnTop = true, ...props }: IHeaderProps) => {
     <div
       className={`${
         isTransparent ? 'bg-transparent' : 'bg-black'
-      } w-full fixed top-0 right-0 left-0 transition-colors z-10`}
+      } w-full fixed top-0 right-0 left-0 transition-colors z-50`}
     >
       <div className="section-content py-7 px-4 box-content flex justify-between">
         <Link href="/">
