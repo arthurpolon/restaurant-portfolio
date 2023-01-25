@@ -12,8 +12,8 @@ import Image6Src from './images/image6.png';
 const WhyChooseUs = () => {
   return (
     <div className="bg-black-1">
-      <div className="section-content py-14 px-4 flex flex-col-reverse gap-10 justify-between md:flex-row">
-        <div className="flex flex-col gap-5 max-w-md">
+      <div className="section-content py-14 px-4 flex flex-col-reverse gap-10 justify-between md:flex-row md:gap-20 lg:gap-40">
+        <div className="flex flex-col gap-5">
           <div className="flex gap-4">
             <div className="relative">
               <Image src={Image1Src} alt="prato de comida" />
@@ -39,15 +39,15 @@ const WhyChooseUs = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center">
-          <h2 className="font-fancy text-primary text-3xl mb-2">
+        <div className="flex flex-col items-center xl:mt-28 md:items-start">
+          <h2 className="font-fancy text-primary text-3xl mb-2 self-center md:self-start">
             Why Choose Us{' '}
           </h2>
           <h3 className="font-bold text-4xl text-white mb-8">
             <span className="text-primary">Ex</span>traordinary taste
             <br /> And Experienced
           </h3>
-          <p className="text-base text-white max-w-lg mb-6 text-justify">
+          <p className="text-base text-white max-w-lg mb-6 text-justify 1xs:mb-8 md:text-left">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
             diam pellentesque bibendum non dui volutpat fringilla bibendum.
             Urna, elit augue urna, vitae feugiat pretium donec id elementum.
@@ -68,7 +68,7 @@ const WhyChooseUs = () => {
               <p className="text-base text-white text-center">Dinner</p>
             </div>
           </div>
-          <div className="bg-white border-l-8 rounded border-primary flex items-center justify-around p-3 min-w-[248px] max-w-xs xxs:min-w-[288px]">
+          <div className="bg-white border-l-8 rounded border-primary flex items-center justify-around p-3 min-w-[248px] max-w-xs xxs:min-w-[288px] ">
             <h3 className="text-primary font-bold text-4xl">30+</h3>
             <p className="text-base">
               Years of <br /> <strong>Experience</strong>
